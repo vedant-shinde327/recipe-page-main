@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 24px;
+    padding: 24px;
+}
+h1, h2 {
+    font-family: 'Young Serif', serif;
+}
+h2 {
+    color: hsl(14, 45%, 36%);
+    margin: 10px;
+}
+
+.container {
+    background-color: white;
+    
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 1rem;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.container .image {
+    height:200px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.Heading {
+    text-align: left;
+    padding: 10px;
+}
+.info {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.Preparation-time {
+    background-color:  hsl(330, 100%, 98%);
+    
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    line-height: 1.8rem;
+    
+}
+.heading3 {
+    color: hsl(332, 51%, 32%);
+}
+.Preparation-time ul {
+    margin-left: 2rem;
+    opacity: 0.7;
+}
+
+.ingredients {
+    line-height: 1.8rem;
+    
+    
+}
+.ingredients ul {
+    margin-left: 2rem;
+    opacity: 0.7;
+}
+
+.hr-line {
+    opacity: 0.5;
+    margin: 0.5rem;
+}
+.instructions ol {
+    opacity: 0.7;
+    margin-left: 2rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.nutrition {
+    width: 500px;
+    margin: 0 auto;
+}
+.nutrition .desc {
+    font-size: 14px;
+    opacity: 0.7;
+    padding: 1rem;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 1rem 0;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    color: hsl(30, 10%, 34%);
+    
+    
+}
+.values {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
