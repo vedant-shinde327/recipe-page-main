@@ -25,7 +25,7 @@ h2 {
 .container {
     background-color: white;
     
-    width: 500px;
+    max-width: 375px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,8 +36,9 @@ h2 {
 }
 
 .container .image {
-    height:200px;
-    width: 500px;
+    height:auto;
+    width: 100%;
+    display: block;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -90,13 +91,14 @@ h2 {
     line-height: 1.5rem;
 }
 .nutrition {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
 .nutrition .desc {
     font-size: 14px;
     opacity: 0.7;
     padding: 1rem;
+    width: 100%;
 }
 
 .nutrition table {
@@ -107,10 +109,28 @@ td {
     padding: 1rem 0;
     border-bottom: 1px solid hsl(30, 18%, 87%);
     color: hsl(30, 10%, 34%);
-    
-    
 }
 .values {
     font-weight: 700;
     color: hsl(14, 45%, 36%);
+}
+
+/* for tablet size */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+        padding: 32px;
+    }
+    .image {
+        max-width: fit-content;
+    }
+}
+
+/* for desktop size */
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 700px;
+    }
 }
